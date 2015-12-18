@@ -184,6 +184,8 @@ class AutoTests(ServerTestCase):
         NEW_LE_AUTO_SIG = signed(NEW_LE_AUTO, PRIVATE_KEY)
 
         with ephemeral_dir() as venv_dir:
+            # This serves a PyPI page with a higher version, a GitHub-alike
+            # with a corresponding le-auto script, and a matching signature.
             with server({'': """<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"><html>
 <title>Directory listing for /</title>
 <body>

@@ -93,7 +93,7 @@ def verified_new_le_auto(get, tag, temp_dir):
 
     """
     le_auto_dir = environ.get(
-        'LE_AUTO_DOWNLOAD_TEMPLATE',
+        'LE_AUTO_DIR_TEMPLATE',
         'https://raw.githubusercontent.com/letsencrypt/letsencrypt/%s/'
         'letsencrypt-auto/') % tag
     write(get(le_auto_dir + 'letsencrypt-auto'), temp_dir, 'letsencrypt-auto')
